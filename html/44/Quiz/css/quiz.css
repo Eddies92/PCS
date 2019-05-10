@@ -1,0 +1,28 @@
+html {
+    background-color: black;
+}
+
+body {
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    height: 100px;
+    width: 350px;
+    background-color: yellow;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+    float: left;
+    margin: 15px;
+    overflow: auto;
+}
+
+p {
+    clear: both;
+}
