@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr) 100px;
+    margin-bottom: 50px;
+}
+
+nav, footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
+
+nav {
+    top: 0;
+}
+
+ul{
+    padding-left: 100px;
+}
+
+li {
+    display: inline;
+    padding-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+header {
+    grid-column: 2 / -2;
+    background-color: lightgray;
+    text-align: center;
+    height: 150px;
+    padding-top: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header em {
+    font-style: italic;
+}
+
+section {
+    grid-column: 2 / -2;
+}
+
+div {
+    padding-top :1em;
+}
+
+div h2, h3{
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+#sign {
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 10px;
+    padding-bottom: 1em;
+    
+}
+
+
+input {
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+}
+
+
+#financials {
+    overflow-x: auto;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: .5em;
+    text-align: center;
+}
+
+td:first-child {
+    font-weight: bolder;
+    text-align: center;
+}
+
+td:last-child {
+    color:red;
+}
+
+tbody td, tfoot td {
+    text-align: end;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+tfoot td:first-child {
+    text-align: end;
+}
+
+tr:hover {
+    background-color: cadetblue !important;
+}
+
+footer {
+    color: white;
+    padding-left: 100px;
+    bottom: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    #products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: start;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    #products div {
+        padding-top: 0;
+    }
+
+    #phead {
+        grid-column: 1 / 4;
+        margin-bottom: 1em;
+    }
+
+    #phead h2{
+        display: flex;
+        justify-content: left;
+    }
+        
+    #computers {
+        grid-column: 1 / 2;
+        border-right: 1px solid black;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    #choirs {
+        grid-column: 2 / 3;
+        border-right: 1px solid black;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    #candy {
+        grid-column: 3 / 4;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    form div {
+        display: inline;
+    }
+}

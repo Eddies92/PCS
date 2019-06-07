@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ESTUFF</title>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -18,23 +20,30 @@
         </ul>
     </nav>
     <header>
-        <h1>ESTUFF</h1>
-        <h2>A PCS Company</h2>
+        <h1>estuff</h1>
+        <h2>A <em>PCS</em> Company</h2>
     </header>
     <section id="products">
-        <h2>Products</h2>
+        <div id="phead">
+            <h2>Products</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum omnis excepturi optio doloribus qui,
+                distinctio dolore labore repudiandae voluptas.</p>
+        </div>
         <div id="computers">
+            <h2>Computers</h2>
             <img src="images/macworld.jpg" alt="Computer">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, corrupti ratione nesciunt assumenda
                 perferendis voluptatibus odit nam sed, unde sequi fuga harum aliquam itaque ab quam non sit consequatur
                 similique. Cumque repellat sequi dolorem ullam!</p>
         </div>
         <div id="choirs">
+            <h2>Choirs</h2>
             <video controls poster="images/shira.png" src="images/El Hanaar Hazeh.mp4" alt="Choir"></video>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis veritatis architecto in illum, soluta
                 praesentium corrupti maiores quod enim? Modi libero impedit dolorem omnis labore.</p>
         </div>
         <div id="candy">
+            <h2>Candy</h2>
             <img src="images/candy.png" alt="Bowl of candy">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eligendi commodi assumenda culpa itaque
                 tempore at quod odit? Accusantium consequatur quidem sint dolore nam ab?</p>
@@ -43,11 +52,11 @@
     <section id="sign">
         <h2>Sign Me Up!</h2>
         <form action="signup.php" method="post">
-            <label for="Name">Name:</label><input name="Name" id="Name" placeholder="Your Name..." required
-                minlength="3">
-            <label for="email"></label>Email:<input type="email" name="email" id="email" placeholder="Your Email"
-                required minlength="7">
-            <input type="submit" value="Sign Me Up!">
+            <div id="name"> <label for="Name">Name: </label><input name="Name" id="Name" placeholder="Your Name..."
+                    required minlength="3"></div>
+            <div id="email"><label for="email"></label>Email: <input type="email" name="email" id="email"
+                    placeholder="Your Email" required minlength="7"></div>
+            <div id="submit"><input type="submit" value="Sign Me Up!"></div>
         </form>
     </section>
     <section id="financials">
@@ -58,14 +67,16 @@
             accusamus placeat, pariatur molestias aliquid odio est, repellat in?.</p>
         <h3>Profits - By Quarter</h3>
         <table>
-            <tr>
-                <thead>Year</thead>
-                <thead>1st Quarter Profits</thead>
-                <thead>2nd Quarter Profits</thead>
-                <thead>3rd Quarter Profits</thead>
-                <thead>4th Quarter Profits</thead>
-                <thead>Total</thead>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>1st Quarter Profits</th>
+                    <th>2nd Quarter Profits</th>
+                    <th>3rd Quarter Profits</th>
+                    <th>4th Quarter Profits</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <td>2012</td>
@@ -95,14 +106,14 @@
                     <td>2015</td>
                     <td>$1254564.32</td>
                     <td>$1154545.67</td>
-                    <td>$1236566.98</td>
-                    <td>$1368546.32</td>
+                    <td>NA</td>
+                    <td>NA</td>
                     <td>$5050934.29</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Totak</td>
+                    <td colspan="5">Total</td>
                     <td>$23456773.01</td>
                 </tr>
             </tfoot>
@@ -152,6 +163,9 @@
             tempora totam illo hic adipisci eveniet corrupti tempore sed sunt non inventore, sint eaque. Minus
             laudantium repellendus asperiores sequi sapiente delectus cum blanditiis.</p>
     </section>
+    <footer>
+        <p>&copy; PCS 2019</p>
+    </footer>
 </body>
 
 </html>
