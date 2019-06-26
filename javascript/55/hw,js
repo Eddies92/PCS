@@ -1,0 +1,3 @@
+const weekUtils = (function () {
+    'use strict';
+} )
