@@ -9,7 +9,7 @@ const weekUtils = (function () {
         },
 
         getDayNum: function (name) {
-            for (let i = 0; i < days.index; i++) {
+            for (let i = 0; i < days.length; i++) {
                 if (days[i] === name) {
                     return i + 1;
                 }
@@ -31,12 +31,12 @@ const calculator = (function () {
             return amount * rate * years;
         },
 
-        setRate: function (rate) {
-            rate = this.rate;
+        setRate: function (newRate) {
+            rate = newRate;
         },
 
-        setYears: function (years) {
-            years = this.years;
+        setYears: function (newYears) {
+            years = newYears;
         }
     };
 }());
