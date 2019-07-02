@@ -4,7 +4,7 @@
     function account() {
         return {
             balance: 0
-        }
+        };
     }
 
     function transaction(amount) {
