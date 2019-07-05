@@ -13,5 +13,6 @@ window.app.counter = (function (counter) {
     c2.read();
 
 
+
     return counter;
 }(window.app.counter || {}));
