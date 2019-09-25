@@ -22,9 +22,6 @@
     v.print();
 
     class Plane extends Vehicle {
-        constructor(color) {
-            super(color);
-        }
 
         go(speed) {
             this.speed = speed;
