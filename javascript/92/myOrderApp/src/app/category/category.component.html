@@ -1,0 +1,12 @@
+<select name="categories">
+    <option *ngFor="let name of category.names">
+        {{name}}
+    </option>
+</select>
+
+<hr />
+
+<h3>{{category.names}}</h3>
+
+
+<app-item [item]="category.item"></app-item>
